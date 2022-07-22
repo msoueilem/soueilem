@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "soueilem"
 output: 
   flexdashboard::flex_dashboard:
@@ -15,4 +15,19 @@ knitr::opts_chunk$set(echo = FALSE )
 fileConn <- file("myheader.html")
 writeLines('<meta http-equiv="refresh" content="0; url=https://msoueilem.github.io/soueilem/"/>', fileConn)
 close(fileConn)
+``` -->
+<script type="text/javascript">
+    go_away = function () {
+        location.href = "https://msoueilem.github.io/soueilem/";
+    };
+</script> 
+
+```{r, echo=F}
+shinyjs::useShinyjs(rmd = TRUE)
+actionButton("myButton2", "Redirect!!")
+
+observeEvent(input$myButton2, {
+  shinyjs::runjs('go_away()')
+})
+
 ```
