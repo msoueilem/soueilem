@@ -10,14 +10,13 @@
   <meta name="description" content="Mohamed Soueilem | Portflio" />
   <style>
     html {
-      color: #212121;
-      /* Grey 900 */
+      color: #212121; /* Grey 900 */
       font-family: system-ui;
       font-size: .8rem;
     }
 
     body {
-      max-width: 58rem;
+      max-width: 65rem;
       margin: 0 auto;
       padding: 1rem;
       display: flex;
@@ -31,6 +30,7 @@
     aside {
       width: 33%;
       margin-top: 3rem;
+      margin-left: 1rem;
 
     }
 
@@ -41,15 +41,13 @@
     h2 {
       margin: 0 0 1rem 0;
       font-size: 1rem;
-      color: #616161;
-      /* Gray 700 */
+      color: #616161; /* Gray 700 */
     }
 
     h3 {
       margin: 0;
       font-size: 1.25rem;
-      color: #616161;
-      /* Gray 700 */
+      color: #616161; /* Gray 700 */
     }
 
     h4,
@@ -66,22 +64,18 @@
     article {
       margin: 0 0 1.5rem 0;
     }
-
-    /* footer {
-      position: f;
-      background-color: #FFF9C4;
-      left: 0;
-      bottom: 0;
-      width: 100%; /* background-color: red; 
-      color: #616161; /* Gray 700 
-      text-align: center;
-      margin-bottom: 0.7rem;
-      padding-top: 0.5rem;
-    } */
+    article.experience {
+      display: flex;
+    }
+    ul {
+      padding-left: 2rem;
+    }
+    li {
+      margin-bottom: .5rem;
+    }
 
     #contact-information {
-      color: #616161;
-      /* Gray 700 */
+      color: #616161; /* Gray 700 */
     }
 
     .contact-information-item {
@@ -104,8 +98,7 @@
 
     a.contact-information-label {
       margin-left: .5rem;
-      color: #0288D1;
-      /* Blue 700 */
+      color: #0288D1; /* Blue 700 */
       text-decoration: none;
     }
 
@@ -114,8 +107,7 @@
     }
 
     .career-note {
-      background-color: #FFF9C4;
-      /* Grey 700 */
+      background-color: #FFF9C4; /* Grey 700 */
       font-size: 0.8rem;
       padding: 0.5rem;
       border-radius: 0.75rem;
@@ -123,10 +115,18 @@
     }
 
     .skills {
-      background-color: #ECEFF1;
-      /* Blue Gray 50 */
+      background-color: #ECEFF1; /* Blue Gray 50 */
       padding: 1rem;
       border-radius: .5rem;
+    }
+
+    .experience-icon {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1rem;
+    }
+    .experience-content {
+      flex: 1;
     }
   </style>
 </head>
@@ -188,7 +188,8 @@
       <div class="career-note"> <b>CAREER NOTE:</b> Completed on-campus studies and currently taking distance education
         courses to complete a master's degree in Computer Science (Available for full-time, W-2 employment). </div>
       <article class="experience">
-
+        <img src="/assets/images/vue.svg" alt="Vue Icon" class="experience-icon">
+        <div class="experience-content">
         <h3>Software Developer</h3>
         <h4>MAURIBAC BY MAURIBIT, Nouakchott, Mauritania · 2018-2022</h4>
         <p>Website for publication of exam results.</p>
@@ -208,8 +209,14 @@
         </ul>
         <div> <b>Technologies Used:</b> VueJS, TypeScript, AWS, Angular, React, Git, Bitbucket, Redis, Google Analytics,
           Visual Studio</div>
+        </div>
       </article>
       <article class="experience">
+
+
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" class="experience-icon"><style type="text/css">.st0{fill:#0acf83}.st1{fill:#a259ff}.st2{fill:#f24e1e}.st3{fill:#ff7262}.st4{fill:#1abcfe}</style><title>Figma.logo</title><desc>Created using Figma</desc><path id="path0_fill" class="st0" d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z"/><path id="path1_fill" class="st1" d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z"/><path id="path1_fill_1_" class="st2" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z"/><path id="path2_fill" class="st3" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z"/><path id="path3_fill" class="st4" d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z"/></svg>
+        <!-- <img src="/assets/images/figma.png" alt="Vue Icon" class="experience-icon"> -->
+        <div class="experience-content">
         <h3>Content Manager </h3>
         <h4>TYBAA BY MAURIBIT, Nouakchott, Mauritania · 2021</h4>
         <p>Web Application designed to assist users in learning to type in Arabic.</p>
@@ -220,8 +227,11 @@
           <li>Managed G-suite, including setting-up emails and groups. </li>
         </ul>
         <div> <b>Technologies Used:</b> Figma, GitHub, G-Suite.</div>
+        </div>
       </article>
       <article class="experience">
+        <img src="/assets/images/flutter.svg" alt="Vue Icon" class="experience-icon">
+        <div class="experience-content">
         <h3>Flutter Developer </h3>
         <h4>iProd, Nouakchott, Mauritania · 2019-2019 </h4>
         <p>Creating mobile applications based on demand.</p>
@@ -232,12 +242,12 @@
           <li>Manage the back end of the application to be linked with firebase interface so the client can have
             Realtime database access. </li>
         </ul>
-        <div> <b>Technologies Used:</b> Flutter, GitHub, Dart, Firebase, Google Cloud Platform. </div>
+        <div> <b>Technologies Used:</b> Flutter, GitHub, Dart, Firebase, Google Cloud Platform. </div> 
+      </div>
       </article>
     </section>
     <h2>ACADEMIC PROJECTS</h2>
     <section>
-      <p>Below is the format for Academic Projects. Please follow the same format.</p>
       <b>Maharishi International University, Fairfield IA (2022)</b>
       <ul>
         <li> <b> Mean Games:</b> Created scalable single web application, that meant to have track of all your mean
@@ -281,18 +291,18 @@
       </svg>
       Skills</div>
       <ul>
-        <li class="skill">Languages: Dart, Java, C++, C </li>
-        <li class="skill">Web: HTML5, CSS3, JavaScript, XML, Angular JS, NodeJS, Vue JS</li>
-        <li class="skill">Web Services: REST-API </li>
-        <li class="skill">Web & Application Servers: AWS (Amazon Web Services) </li>
-        <li class="skill">Frameworks: Express, Flutter, Angular, Node, Hibernate (JPA)</li>
-        <li class="skill">Databases: Mongo DB, Redis, MySQL</li>
-        <li class="skill">Design Patterns: Singleton, Prototype, Observer, Session, Session Factory, Factory, Abstract
+        <li class="skill"> <b> Languages:</b> Dart, Java, C++, C </li>
+        <li class="skill"> <b>Web: </b> HTML5, CSS3, JavaScript, XML, Angular JS, NodeJS, Vue JS</li>
+        <li class="skill"> <b>Web Services: </b>REST-API </li>
+        <li class="skill"> <b>Web & Application Servers:</b> AWS (Amazon Web Services) </li>
+        <li class="skill"> <b>Frameworks: </b>Express, Flutter, Angular, Node, Hibernate (JPA)</li>
+        <li class="skill"> <b>Databases: </b>Mongo DB, Redis, MySQL</li>
+        <li class="skill"> <b>Design Patterns: </b>Singleton, Prototype, Observer, Session, Session Factory, Factory, Abstract
           Factory, Proxy, Decorator, Façade, State, Strategy, Template Method, Visitor, Iterator, Adapter, Command,
           Composite </li>
-        <li class="skill">SDLC: Agile, Waterfall </li>
-        <li class="skill">Tools: VS Code, IntelliJ, Sublime Text, UML, Docker, Postman, GitHub, Zoom, Eclipse </li>
-        <li class="skill">Platforms: MacOS, Windows, Linux </li>
+        <li class="skill"><b>SDLC:</b> Agile, Waterfall </li>
+        <li class="skill"><b>Tools:</b> VS Code, IntelliJ, Sublime Text, UML, Docker, Postman, GitHub, Zoom, Eclipse </li>
+        <li class="skill"><b>Platforms:</b> MacOS, Windows, Linux </li>
       </ul>
     </section>
   </aside>
