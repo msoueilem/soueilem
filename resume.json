@@ -1,0 +1,87 @@
+{
+  "name": "Mohamed Soueilem",
+  "contact": {
+    "location": "Atlanta, GA 30338",
+    "phone": "641-819-1600",
+    "email": "mlsoueilem@gmail.com",
+    "linkedin": "linkedin.com/in/soueilem"
+  },
+  "summary": "Senior Software Engineer with more than seven years of full-stack experience, specializing in scalable software solutions, performance optimization, and cross-functional team leadership. Proven track record of mentoring junior engineers, owning end-to-end projects, and aligning development with business goals. Experienced in Agile, DevOps, and CI/CD environments, with a strong focus on code quality, delivery speed, and engineering excellence.",
+  "skills": {
+    "SDLC": ["Agile", "Waterfall"],
+    "Management": ["Remote Team Leadership", "Agile Project Management", "Technical Hiring", "Product Strategy"],
+    "Languages": ["JavaScript (ES6+)", "TypeScript", "Dart", "Java", "C++", "C"],
+    "Web & Web Services": ["REST-API", "HTML5", "CSS3", "JavaScript", "XML"],
+    "Frontend Frameworks": ["React.js", "Vue.js", "Angular.js"],
+    "Backend Development": ["Node.js", "Express.js", "REST API"],
+    "State Management": ["Redux", "Vuex"],
+    "Cloud": ["AWS", "GCP", "Firebase"],
+    "Frameworks": ["Express", "Flutter"],
+    "Databases": ["Mongo DB", "Redis", "MySQL"],
+    "Tools": ["VS Code", "IntelliJ", "Sublime Text", "UML", "Docker", "Postman", "GitHub", "Eclipse"]
+  },
+  "experience": [
+    {
+      "company": "UKG",
+      "location": "Atlanta, GA (Hybrid)",
+      "period": "05/2025 – Present",
+      "title": "Software Engineer II",
+      "responsibilities": [
+        "Design, develop, test, deploy, and maintain clean, maintainable, and efficient software solutions using DevOps model in collaboration with Product Management.",
+        "Participate in design reviews and architectural design of new features and systems, ensuring scalability, reliability, and maintainability.",
+        "Review code by other developers and provide feedback to ensure that code adhered to best practices like coding guidelines, elegant, efficient and maintainable code, with observability built from ground up.",
+        "Build testable software, define tests, participate in testing, and automate tests using tools (e.g., Junit, Selenium) and Design Patterns that are guided by test automation pyramid.",
+        "Triage defects or customer reported issues; debug and resolve in a timely and efficient manner.",
+        "Contribute to maintaining health and quality of services; promptly identify and escalate issues. Utilize health indicators and telemetry for action.",
+        "Assist in conducting root cause analysis and implementing measures to prevent future recurrences.",
+        "Properly document new product features, enhancements, or fixes. Contribute to training materials."
+      ]
+    },
+    {
+        "company": "LEBJAWI TECH",
+        "location": "Nouakchott, Mauritania (Remote)",
+        "period": "10/2019 – Present",
+        "title": "Founder & Owner",
+        "responsibilities": [
+            "Rebuilt the company from the ground up—establishing operations, recruiting interns, and developing a self-sufficient team.",
+            "Took full ownership of Lebjawi Tech and transitioned it from a student-run side project to a registered IT company with over 30+ full-time interns.",
+            "Recruited, trained, and mentored a diverse team of interns across software development, UI/UX, and digital marketing — helping them build real-world, production-level experience."
+        ]
+    },
+    {
+        "company": "WEBMD BY INTERNET BRANDS",
+        "location": "Atlanta, GA (Hybrid)",
+        "period": "10/2022 – 02/2025",
+        "title": "Software Developer",
+        "responsibilities": [
+            "Developed and maintained accessible, standards-compliant HTML, CSS, and JavaScript for front-end deployment.",
+            "Mentored seven junior developers, introducing code standards, documentation, and pair programming.",
+            "Upgraded deprecated Chrome extension to Manifest V3, enhancing functionality and compatibility; refactored legacy JS to TypeScript, reducing runtime errors by 20%."
+        ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "Maharishi International University, Fairfield, IA"
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Nouakchott Al-Asriya, Nouakchott, Mauritania"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Fluent"
+    },
+    {
+      "language": "Arabic",
+      "proficiency": "Native Speaker"
+    },
+    {
+      "language": "French",
+      "proficiency": "Intermediate"
+    }
+  ]
+}
