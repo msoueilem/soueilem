@@ -5,7 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
       const app = document.getElementById('app');
       app.innerHTML = `
                 <header>
-                    <h1>${data.name}</h1>
+                    <div id="title">
+                    <h1>${data.name} 
+                    <a href="Mohamed_Soueilem_Resume.pdf" download style="text-decoration: none;" title="Download Resume">
+                        📥
+                    </a></h1>
+                    </div>
                     <div id="contact" style="text-align:center;">
                         <p>
                             ${data.contact.location} | 
@@ -32,8 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     <h2>Work Experience</h2>
                     ${data.experience.map(job => `
                         <div class="job">
+                            <div class="between">
+                            <h3>${job.company} | ${job.location} </h3><h4> ${job.period}</h4>
+                            </div>
                             <h3>${job.title}</h3>
-                            <h4>${job.company} | ${job.location} | ${job.period}</h4>
                             <ul>
                                 ${job.responsibilities.map(res => `<li>${res}</li>`).join('')}
                             </ul>
